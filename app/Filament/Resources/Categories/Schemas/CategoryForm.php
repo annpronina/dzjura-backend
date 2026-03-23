@@ -17,10 +17,12 @@ class CategoryForm
                     ->label('Nosaukums')
                     ->required()
                     ->maxLength(255),
+
                 Textarea::make('description')
                     ->label('Apraksts')
                     ->required()
                     ->columnSpanFull(),
+                    
                 Toggle::make('is_active')
                     ->label('Aktīvs')
                     ->required(),
